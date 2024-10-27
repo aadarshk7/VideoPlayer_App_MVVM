@@ -11,7 +11,7 @@ Media player packages (video_player, audio_player)
 Path Provider package
 Geocoder package
 Installation
-<ol> <li>Clone the repository: <pre><code>git clone https://github.com/aadarshk7/videoplayer_app.git</code></pre> </li> <li>Navigate to the project directory: <pre><code>cd flutter_mediaplayer</code></pre> </li> <li>Install dependencies: <pre><code>flutter pub get</code></pre> </li> <li>Run the application: <pre><code>flutter run</code></pre> </li> </ol>
+<ol> <li>Clone the repository: <pre><code>git clone https://github.com/aadarshk7/videoplayer_app.git</code></pre> </li> <li>Navigate to the project directory: <pre><code>cd videoplayer_app</code></pre> </li> <li>Install dependencies: <pre><code>flutter pub get</code></pre> </li> <li>Run the application: <pre><code>flutter run</code></pre> </li> </ol>
 Implementation Details
 Media Playback Control
 <p>This app supports the following features for each media file:</p> <ul> <li><strong>Play:</strong> Initiates the video or audio playback.</li> <li><strong>Pause:</strong> Pauses the current playback.</li> <li><strong>Stop:</strong> Stops playback entirely.</li> </ul>
