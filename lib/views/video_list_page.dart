@@ -68,6 +68,18 @@ class _VideoListPageState extends State<VideoListPage> {
                           ),
                         );
                       },
+                      // onTap: () {
+                      //   Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //       builder: (context) => VideoPage(
+                      //         videoUrls: videoData.map((video) => video.videoUrl).toList(),
+                      //         fileNames: List.generate(videoData.length, (index) => 'video${index + 1}.mp4'),
+                      //         titles: videoData.map((video) => video.title).toList(),
+                      //       ),
+                      //     ),
+                      //   );
+                      // },
                       onLongPress: () {
                         _showEditDialog(context, index);
                       },
