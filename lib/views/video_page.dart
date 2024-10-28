@@ -257,10 +257,14 @@ class _VideoPageState extends State<VideoPage> {
                       DropdownButton<double>(
                         value: _playbackSpeed,
                         items: const [
-                          DropdownMenuItem(value: 0.5, child: Text("0.5x")),
-                          DropdownMenuItem(value: 1.0, child: Text("1.0x")),
-                          DropdownMenuItem(value: 1.5, child: Text("1.5x")),
-                          DropdownMenuItem(value: 2.0, child: Text("2.0x")),
+                          DropdownMenuItem(
+                              value: 0.5, child: Text("Speed 0.5x")),
+                          DropdownMenuItem(
+                              value: 1.0, child: Text("Speed 1.0x")),
+                          DropdownMenuItem(
+                              value: 1.5, child: Text("Speed 1.5x")),
+                          DropdownMenuItem(
+                              value: 2.0, child: Text("Speed 2.0x")),
                         ],
                         onChanged: (value) {
                           if (value != null && _controller != null) {
