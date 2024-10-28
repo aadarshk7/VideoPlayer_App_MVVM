@@ -28,34 +28,17 @@ class Video {
 
   factory Video.fromJson(Map<String, dynamic> json) {
     return Video(
-      id: json['id'],
-      title: json['title'],
-      thumbnailUrl: json['thumbnailUrl'],
-      duration: json['duration'],
-      uploadTime: json['uploadTime'],
-      views: json['views'],
-      author: json['author'],
-      videoUrl: json['videoUrl'],
-      description: json['description'],
-      subscriber: json['subscriber'],
-      isLive: json['isLive'],
+      id: json['id']?.toString() ?? '',
+      title: json['title']?.toString() ?? 'Untitled',
+      thumbnailUrl: json['thumbnailUrl']?.toString() ?? '',
+      duration: json['duration']?.toString() ?? '0:00',
+      uploadTime: json['uploadTime']?.toString() ?? 'Unknown',
+      views: json['views']?.toString() ?? '0',
+      author: json['author']?.toString() ?? 'Unknown',
+      videoUrl: json['videoUrl']?.toString() ?? '',
+      description: json['description']?.toString() ?? 'No description available',
+      subscriber: json['subscriber']?.toString() ?? '0',
+      isLive: json['isLive'] ?? false,  // assuming `isLive` is boolean
     );
   }
 }
-
-// // lib/models/video_model.dart
-// class Video {
-//   final String videoUrl;
-//   late final String title;
-//   final String author;
-//
-//   Video({required this.videoUrl, required this.title, required this.author});
-//
-//   factory Video.fromJson(Map<String, dynamic> json) {
-//     return Video(
-//       videoUrl: json['videoUrl'],
-//       title: json['title'],
-//       author: json['author'],
-//     );
-//   }
-// }

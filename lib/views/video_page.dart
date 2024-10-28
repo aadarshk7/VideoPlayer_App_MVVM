@@ -200,7 +200,7 @@ class _VideoPageState extends State<VideoPage> {
                       _controller!,
                       allowScrubbing: true,
                       colors: const VideoProgressColors(
-                        playedColor: Colors.blueAccent,
+                        playedColor: Colors.red,
                         backgroundColor: Colors.grey,
                       ),
                     ),
