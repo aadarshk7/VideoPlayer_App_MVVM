@@ -1,42 +1,4 @@
-// // lib/repository/video_repository.dart
-// import 'dart:convert';
-// import 'package:dio/dio.dart';
-// import 'package:path_provider/path_provider.dart';
-// import 'dart:io';
-// import '../models/video_model.dart';
-//
-// class VideoRepository {
-//   final Dio _dio = Dio();
-//
-//   Future<String> downloadVideo(String url, String fileName) async {
-//     try {
-//       final dir = await getApplicationDocumentsDirectory();
-//       final filePath = '${dir.path}/$fileName';
-//
-//       await _dio.download(url, filePath);
-//       return filePath;
-//     } catch (e) {
-//       throw Exception('Failed to download video: $e');
-//     }
-//   }
-//
-//   Future<List<Video>> fetchVideos() async {
-//     try {
-//       final response = await _dio.get(
-//           'https://gist.githubusercontent.com/poudyalanil/ca84582cbeb4fc123a13290a586da925/raw/14a27bd0bcd0cd323b35ad79cf3b493dddf6216b/videos.json');
-//       List<dynamic> data =
-//           response.data is String ? jsonDecode(response.data) : response.data;
-//       return data.map((json) => Video.fromJson(json)).toList();
-//     } catch (e) {
-//       throw Exception('Failed to fetch videos: $e');
-//     }
-//   }
-// }
 
-// lib/repository/video_repository.dart
-// lib/repository/video_repository.dart
-// lib/repository/video_repository.dart
-// lib/repository/video_repository.dart
 import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:path_provider/path_provider.dart';
